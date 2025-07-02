@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Cultural Composición Digital - Grupo 7 - Comisión A - 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-lfKzjmOI.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Composición Digital</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merchandising.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner/Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Arte y Cultura para Todos</h1>
+            <p class="lead">Explora nuestras exposiciones y eventos culturales diseñados para inspirar y educar</p>
+            <a href="colecciones.html" class="btn btn-primary">Explorar Colecciones</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                 alt="Exposición de arte" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Nuestras Actividades</h2>
+          <p>Descubre todo lo que tenemos para ofrecerte</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-item">
+              <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>Obras de Arte</h3>
+              <p>Explora nuestra colección permanente y exposiciones temporales con obras de artistas nacionales e internacionales.</p>
+              <a href="colecciones.html" class="btn btn-outline-primary btn-sm">Ver Colecciones</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <div class="icon">
+                <i class="fas fa-music"></i>
+              </div>
+              <h3>Conciertos</h3>
+              <p>Disfruta de eventos musicales en vivo con artistas locales e internacionales en nuestro auditorio principal.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#concertModal">Ver Agenda</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <div class="icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3>Visitas Guiadas</h3>
+              <p>Recorre nuestras instalaciones con guías especializados que te contarán la historia detrás de cada obra.</p>
+              <a href="contacto.html" class="btn btn-outline-primary btn-sm">Reservar Visita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para Conciertos -->
+    <div class="modal fade" id="concertModal" tabindex="-1" aria-labelledby="concertModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="concertModalLabel">Próximos Conciertos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" class="card-img-top" alt="Concierto de Jazz">
+                  <div class="card-body">
+                    <h5 class="card-title">Noche de Jazz</h5>
+                    <p class="card-text">15 de Julio, 20:00 hs</p>
+                    <p>Un recorrido por los clásicos del jazz con músicos locales.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" class="card-img-top" alt="Concierto de Música Clásica">
+                  <div class="card-body">
+                    <h5 class="card-title">Música Clásica</h5>
+                    <p class="card-text">22 de Julio, 19:30 hs</p>
+                    <p>Orquesta sinfónica interpretando obras de Beethoven y Mozart.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="contacto.html" class="btn btn-primary">Reservar Entradas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Nuestras Colecciones</h2>
+          <p>Destacados de nuestras exposiciones permanentes</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                   alt="Obra de arte abstracta" class="img-fluid rounded">
+              <div class="overlay">
+                <h4>Abstracción Geométrica</h4>
+                <p>Colección Moderna</p>
+                <a href="colecciones.html" class="btn btn-sm btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                   alt="Escultura contemporánea" class="img-fluid rounded">
+              <div class="overlay">
+                <h4>Escultura Contemporánea</h4>
+                <p>Artistas Emergentes</p>
+                <a href="colecciones.html" class="btn btn-sm btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                   alt="Fotografía artística" class="img-fluid rounded">
+              <div class="overlay">
+                <h4>Fotografía Documental</h4>
+                <p>Exposición Temporal</p>
+                <a href="colecciones.html" class="btn btn-sm btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                   alt="Arte digital" class="img-fluid rounded">
+              <div class="overlay">
+                <h4>Arte Digital</h4>
+                <p>Nuevos Medios</p>
+                <a href="colecciones.html" class="btn btn-sm btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                 alt="Nuestro equipo" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="section-header">
+              <h2>Sobre Nosotros</h2>
+              <p>Un espacio dedicado al arte y la cultura</p>
+            </div>
+            <p>Somos un centro cultural comprometido con la difusión del arte y la cultura en todas sus formas. Desde nuestra fundación en 2015, hemos trabajado para crear un espacio inclusivo donde artistas, estudiantes y amantes del arte puedan conectar y compartir experiencias.</p>
+            <p>Nuestras instalaciones incluyen galerías de exposición, un auditorio para eventos, talleres educativos y espacios de encuentro para la comunidad artística.</p>
+            <a href="quienes-somos.html" class="btn btn-outline-primary">Conoce nuestra historia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Testimonios</h2>
+          <p>Lo que nuestros visitantes dicen sobre nosotros</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"Una experiencia increíble. Las exposiciones están muy bien curadas y el personal es extremadamente amable y conocedor. Definitivamente volveré."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 1" class="rounded-circle">
+                      <h4>Carlos Rodríguez</h4>
+                      <p>Artista Visual</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"Los talleres para niños son fantásticos. Mi hija aprendió mucho sobre arte y se divirtió al mismo tiempo. El personal es muy paciente y dedicado."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 2" class="rounded-circle">
+                      <h4>Ana Martínez</h4>
+                      <p>Madre y Educadora</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"El concierto de jazz al que asistí fue excepcional. El ambiente, la acústica y la selección de artistas fueron perfectos. Una noche para recordar."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 3" class="rounded-circle">
+                      <h4>Miguel Sánchez</h4>
+                      <p>Músico</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"La exposición de fotografía documental me pareció reveladora. La curaduría es excelente y el espacio está muy bien aprovechado."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 4" class="rounded-circle">
+                      <h4>Laura Gómez</h4>
+                      <p>Fotógrafa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"Como profesor, valoro mucho los recursos educativos que ofrece el centro. Mis estudiantes siempre disfrutan de las visitas guiadas."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 5" class="rounded-circle">
+                      <h4>Roberto Pérez</h4>
+                      <p>Profesor de Arte</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>"La tienda del museo tiene productos muy originales. Compré varios recuerdos y todos mis amigos quedaron encantados con los diseños."</p>
+                    </div>
+                    <div class="testimonial-author">
+                      <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                           alt="Visitante 6" class="rounded-circle">
+                      <h4>Elena Díaz</h4>
+                      <p>Diseñadora</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Contáctanos</h2>
+          <p>Estamos aquí para responder tus preguntas</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-info">
+              <h3>Información de Contacto</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+              <p><i class="fas fa-phone"></i> +123 456 7890</p>
+              <p><i class="fas fa-envelope"></i> info@composiciondigital.com</p>
+              <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Asunto">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Composición Digital</h3>
+          <p>Un espacio dedicado al arte y la cultura en todas sus formas.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="quienes-somos.html">Nosotros</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="merchandising.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Boletín Informativo</h3>
+          <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Tu email" required>
+              <button class="btn btn-primary" type="submit">Suscribir</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Composición Digital. Todos los derechos reservados. | Desarrollado por: Grupo 7 - Comisión A - 2025</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

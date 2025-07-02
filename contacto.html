@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Centro Cultural Composición Digital - Julieta Viano - Comisión DGT5AV - Turno tarde - Tercer año</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Composición Digital</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merchandising.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Contacto</h1>
+            <p class="lead">Estamos aquí para responder tus preguntas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2>Envíanos un Mensaje</h2>
+            <p class="mb-4">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">Nombre *</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Apellido *</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu apellido.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                  Por favor ingresa un email válido.
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              
+              <div class="mb-3">
+                <label for="subject" class="form-label">Asunto *</label>
+                <select class="form-select" id="subject" required>
+                  <option value="" selected disabled>Selecciona una opción</option>
+                  <option value="general">Consulta General</option>
+                  <option value="visit">Visita Guiada</option>
+                  <option value="event">Eventos</option>
+                  <option value="shop">Tienda</option>
+                  <option value="other">Otro</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor selecciona un asunto.
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje *</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor ingresa tu mensaje.
+                </div>
+              </div>
+              
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacy" required>
+                <label class="form-check-label" for="privacy">Acepto la política de privacidad *</label>
+                <div class="invalid-feedback">
+                  Debes aceptar la política de privacidad.
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="contact-info">
+              <h2>Información de Contacto</h2>
+              <p class="mb-4">Puedes contactarnos directamente o visitar nuestro centro cultural durante el horario de apertura.</p>
+              
+              <div class="info-item mb-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Dirección</h3>
+                  <p>Av. Principal 123, Ciudad<br>Código Postal 12345</p>
+                </div>
+              </div>
+              
+              <div class="info-item mb-4">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h3>Teléfono</h3>
+                  <p>+123 456 7890<br>+123 456 7891</p>
+                </div>
+              </div>
+              
+              <div class="info-item mb-4">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@composiciondigital.com<br>contacto@composiciondigital.com</p>
+                </div>
+              </div>
+              
+              <div class="info-item mb-4">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h3>Horario de Apertura</h3>
+                  <p>
+                    Lunes a Viernes: 10:00 - 20:00<br>
+                    Sábados y Domingos: 11:00 - 18:00<br>
+                    Cerrado: Martes
+                  </p>
+                </div>
+              </div>
+              
+              <div class="social-links mt-4">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guided Tours Section -->
+    <section class="guided-tours py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2>Visitas Guiadas</h2>
+            <p class="lead">Descubre nuestras colecciones con la ayuda de guías especializados</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Visitas Generales</h3>
+                <p class="card-text">Un recorrido completo por nuestras principales exposiciones, ideal para visitantes por primera vez.</p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-clock me-2"></i> Duración: 1 hora</li>
+                  <li><i class="fas fa-users me-2"></i> Grupos de hasta 15 personas</li>
+                  <li><i class="fas fa-language me-2"></i> Disponible en español e inglés</li>
+                  <li><i class="fas fa-calendar-alt me-2"></i> Todos los días a las 11:00, 14:00 y 17:00</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tourModal">Reservar Visita</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Visitas Temáticas</h3>
+                <p class="card-text">Recorridos especializados enfocados en un artista, período o movimiento artístico específico.</p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-clock me-2"></i> Duración: 1.5 horas</li>
+                  <li><i class="fas fa-users me-2"></i> Grupos de hasta 10 personas</li>
+                  <li><i class="fas fa-language me-2"></i> Disponible en español e inglés</li>
+                  <li><i class="fas fa-calendar-alt me-2"></i> Viernes, sábados y domingos a las 16:00</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tourModal">Reservar Visita</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Visitas Educativas</h3>
+                <p class="card-text">Especialmente diseñadas para grupos escolares, con actividades adaptadas a diferentes niveles educativos.</p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-clock me-2"></i> Duración: 1.5 horas</li>
+                  <li><i class="fas fa-users me-2"></i> Grupos de hasta 25 estudiantes</li>
+                  <li><i class="fas fa-language me-2"></i> Disponible en español</li>
+                  <li><i class="fas fa-calendar-alt me-2"></i> Lunes a viernes, horario a coordinar</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tourModal">Reservar Visita</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Visitas Privadas</h3>
+                <p class="card-text">Recorridos exclusivos fuera del horario regular, ideales para grupos privados o eventos especiales.</p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-clock me-2"></i> Duración: 2 horas</li>
+                  <li><i class="fas fa-users me-2"></i> Grupos de hasta 20 personas</li>
+                  <li><i class="fas fa-language me-2"></i> Disponible en español, inglés y francés</li>
+                  <li><i class="fas fa-calendar-alt me-2"></i> Disponibilidad a consultar</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tourModal">Reservar Visita</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Modal -->
+    <div class="modal fade" id="tourModal" tabindex="-1" aria-labelledby="tourModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tourModalLabel">Reserva de Visita Guiada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="tourForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="tourName" class="form-label">Nombre completo *</label>
+                  <input type="text" class="form-control" id="tourName" required>
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu nombre completo.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="tourEmail" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="tourEmail" required>
+                  <div class="invalid-feedback">
+                    Por favor ingresa un email válido.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="tourPhone" class="form-label">Teléfono *</label>
+                  <input type="tel" class="form-control" id="tourPhone" required>
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu número de teléfono.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="tourType" class="form-label">Tipo de Visita *</label>
+                  <select class="form-select" id="tourType" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="general">Visita General</option>
+                    <option value="thematic">Visita Temática</option>
+                    <option value="educational">Visita Educativa</option>
+                    <option value="private">Visita Privada</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor selecciona un tipo de visita.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="tourDate" class="form-label">Fecha *</label>
+                  <input type="date" class="form-control" id="tourDate" required>
+                  <div class="invalid-feedback">
+                    Por favor selecciona una fecha.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="tourTime" class="form-label">Hora *</label>
+                  <select class="form-select" id="tourTime" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor selecciona una hora.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="tourPeople" class="form-label">Número de Personas *</label>
+                <input type="number" class="form-control" id="tourPeople" min="1" max="25" required>
+                <div class="invalid-feedback">
+                  Por favor ingresa el número de personas (máximo 25).
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="tourComments" class="form-label">Comentarios o Requerimientos Especiales</label>
+                <textarea class="form-control" id="tourComments" rows="3"></textarea>
+              </div>
+              
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="tourPrivacy" required>
+                <label class="form-check-label" for="tourPrivacy">Acepto la política de privacidad *</label>
+                <div class="invalid-feedback">
+                  Debes aceptar la política de privacidad.
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <section class="map-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2>Nuestra Ubicación</h2>
+            <p class="lead">Encuéntranos fácilmente en el centro de la ciudad</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895474!2d-58.38375908495075!3d-34.60373446500075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses-419!2sar!4v1656789012345!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2>Preguntas Frecuentes</h2>
+            <p class="lead">Respuestas a las consultas más comunes</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cuál es el costo de la entrada al centro cultural?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    La entrada general tiene un costo de $10. Ofrecemos descuentos para estudiantes, jubilados y grupos. Los niños menores de 12 años, personas con discapacidad y miembros del centro cultural entran gratis. Los miércoles, la entrada es gratuita para todos los visitantes.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Se permite tomar fotografías en las exposiciones?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Se permite tomar fotografías sin flash para uso personal en la mayoría de nuestras exposiciones permanentes. Sin embargo, algunas exposiciones temporales pueden tener restricciones específicas. Siempre verifica las indicaciones en cada sala o consulta con nuestro personal.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cómo puedo reservar una visita guiada?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Puedes reservar una visita guiada a través de nuestro formulario en línea, por teléfono o directamente en la recepción del centro cultural. Recomendamos hacer la reserva con al menos 48 horas de anticipación, especialmente para grupos grandes o visitas educativas.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿El centro cultural es accesible para personas con movilidad reducida?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí, nuestras instalaciones son completamente accesibles para personas con movilidad reducida. Contamos con rampas, ascensores y baños adaptados. También ofrecemos sillas de ruedas gratuitas para los visitantes que las necesiten, disponibles en la recepción.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    ¿Puedo realizar eventos privados en el centro cultural?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí, ofrecemos la posibilidad de alquilar diferentes espacios para eventos privados como conferencias, presentaciones, cócteles o celebraciones especiales. Para más información sobre disponibilidad, precios y condiciones, contacta con nuestro departamento de eventos.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Composición Digital</h3>
+          <p>Un espacio dedicado al arte y la cultura en todas sus formas.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Nosotros</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="merchandising.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Boletín Informativo</h3>
+          <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Tu email" required>
+              <button class="btn btn-primary" type="submit">Suscribir</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Composición Digital. Todos los derechos reservados. | Desarrollado por: Julieta Viano - Comisión DGT5AV - Turno tarde - Tercer año</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

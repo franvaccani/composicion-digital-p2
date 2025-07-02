@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda - Centro Cultural Composición Digital - Julieta Viano - Comisión DGT5AV - Turno tarde - Tercer año</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Composición Digital</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="colecciones.html">Colecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="merchandising.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Tienda del Museo</h1>
+            <p class="lead">Lleva contigo un recuerdo de tu visita</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop Intro -->
+    <section class="shop-intro py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>Merchandising Exclusivo</h2>
+            <p>Nuestra tienda ofrece una selección cuidadosamente curada de productos inspirados en nuestras colecciones y exposiciones. Cada artículo está diseñado para capturar la esencia del arte que albergamos y permitirte llevar un pedazo de nuestra experiencia cultural a tu hogar.</p>
+            <p>Todos los ingresos de nuestra tienda contribuyen directamente a mantener y expandir nuestros programas educativos y exposiciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="products-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">Todos</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="clothing-tab" data-bs-toggle="pill" data-bs-target="#clothing" type="button" role="tab" aria-controls="clothing" aria-selected="false">Ropa</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="accessories-tab" data-bs-toggle="pill" data-bs-target="#accessories" type="button" role="tab" aria-controls="accessories" aria-selected="false">Accesorios</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="prints-tab" data-bs-toggle="pill" data-bs-target="#prints" type="button" role="tab" aria-controls="prints" aria-selected="false">Impresiones</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="products-tabContent">
+          <!-- All Products -->
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="row">
+              <!-- Product 1 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Camiseta Artística" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Camiseta Artística</h3>
+                    <p class="product-category">Ropa</p>
+                    <p class="product-price">$25.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>(24)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/sculpture.jpg" alt="Tote Bag" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Tote Bag</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$18.50</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(18)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/photography.jpg" alt="Taza de Cerámica" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Taza de Cerámica</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$14.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 4 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/digital-art.jpg" alt="Póster Enmarcado" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Póster Enmarcado</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$35.00</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(15)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 5 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Libreta Artística" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Libreta Artística</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$12.75</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(21)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 6 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/sculpture.jpg" alt="Sudadera con Diseño" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Sudadera con Diseño</h3>
+                    <p class="product-category">Ropa</p>
+                    <p class="product-price">$45.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>(29)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 7 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/photography.jpg" alt="Set de Postales" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Set de Postales</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$9.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(12)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 8 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/digital-art.jpg" alt="Pines Coleccionables" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Pines Coleccionables</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$7.50</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(38)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 9 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Calendario Artístico" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Calendario Artístico</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$16.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(17)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Clothing Products -->
+          <div class="tab-pane fade" id="clothing" role="tabpanel" aria-labelledby="clothing-tab">
+            <div class="row">
+              <!-- Product 1 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Camiseta Artística" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Camiseta Artística</h3>
+                    <p class="product-category">Ropa</p>
+                    <p class="product-price">$25.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>(24)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 6 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/sculpture.jpg" alt="Sudadera con Diseño" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Sudadera con Diseño</h3>
+                    <p class="product-category">Ropa</p>
+                    <p class="product-price">$45.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>(29)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accessories Products -->
+          <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+            <div class="row">
+              <!-- Product 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/sculpture.jpg" alt="Tote Bag" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Tote Bag</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$18.50</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(18)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/photography.jpg" alt="Taza de Cerámica" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Taza de Cerámica</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$14.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 5 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Libreta Artística" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Libreta Artística</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$12.75</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(21)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 8 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/digital-art.jpg" alt="Pines Coleccionables" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal8">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Pines Coleccionables</h3>
+                    <p class="product-category">Accesorios</p>
+                    <p class="product-price">$7.50</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(38)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Prints Products -->
+          <div class="tab-pane fade" id="prints" role="tabpanel" aria-labelledby="prints-tab">
+            <div class="row">
+              <!-- Product 4 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/digital-art.jpg" alt="Póster Enmarcado" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Póster Enmarcado</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$35.00</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(15)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 7 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/photography.jpg" alt="Set de Postales" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal7">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Set de Postales</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$9.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(12)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Product 9 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="./assets/compressed/abstract-art.jpg" alt="Calendario Artístico" class="img-fluid">
+                    <div class="product-overlay">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal9">Vista Rápida</a>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Calendario Artístico</h3>
+                    <p class="product-category">Impresiones</p>
+                    <p class="product-price">$16.99</p>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(17)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal1Label">Camiseta Artística</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./assets/compressed/abstract-art.jpg" alt="Camiseta Artística" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Camiseta Artística</h3>
+                <p class="product-price fs-4">$25.99</p>
+                <div class="product-rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>(24 reseñas)</span>
+                </div>
+                <p>Camiseta de algodón 100% orgánico con diseño inspirado en la obra "Abstracción Geométrica" de nuestra colección permanente. Disponible en varios colores y tallas.</p>
+                <div class="mb-3">
+                  <label class="form-label">Talla</label>
+                  <select class="form-select">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Color</label>
+                  <div class="color-options">
+                    <button class="color-option active" style="background-color: #000;"></button>
+                    <button class="color-option" style="background-color: #fff; border: 1px solid #ddd;"></button>
+                    <button class="color-option" style="background-color: #3e6fc9;"></button>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Cantidad</label>
+                  <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal2Label">Tote Bag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./assets/compressed/sculpture.jpg" alt="Tote Bag" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Tote Bag</h3>
+                <p class="product-price fs-4">$18.50</p>
+                <div class="product-rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span>(18 reseñas)</span>
+                </div>
+                <p>Bolsa de lona resistente con diseños exclusivos de nuestras exposiciones. Perfecta para llevar tus compras o libros mientras muestras tu apoyo al arte.</p>
+                <div class="mb-3">
+                  <label class="form-label">Diseño</label>
+                  <select class="form-select">
+                    <option>Abstracción Geométrica</option>
+                    <option>Frida Kahlo</option>
+                    <option>Jean-Michel Basquiat</option>
+                    <option>Yayoi Kusama</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Cantidad</label>
+                  <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModal3Label">Taza de Cerámica</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./assets/compressed/photography.jpg" alt="Taza de Cerámica" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Taza de Cerámica</h3>
+                <p class="product-price fs-4">$14.99</p>
+                <div class="product-rating mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>(32 reseñas)</span>
+                </div>
+                <p>Taza de cerámica de alta calidad con diseños inspirados en nuestras colecciones. Cada taza es única y está hecha a mano por artesanos locales.</p>
+                <div class="mb-3">
+                  <label class="form-label">Diseño</label>
+                  <select class="form-select">
+                    <option>Abstracción Geométrica</option>
+                    <option>Frida Kahlo</option>
+                    <option>Jean-Michel Basquiat</option>
+                    <option>Yayoi Kusama</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Cantidad</label>
+                  <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Otros modales (4-9) seguirían el mismo patrón -->
+
+    <!-- Featured Collections -->
+    <section class="featured-collections py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2>Colecciones Destacadas</h2>
+          <p>Productos inspirados en nuestras exposiciones más populares</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="collection-card">
+              <img src="./assets/compressed/abstract-art.jpg" alt="Colección Frida Kahlo" class="img-fluid rounded">
+              <div class="collection-info">
+                <h3>Colección Frida Kahlo</h3>
+                <p>Productos inspirados en la vida y obra de la icónica artista mexicana.</p>
+                <a href="#" class="btn btn-outline-primary">Ver Colección</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="collection-card">
+              <img src="./assets/compressed/digital-art.jpg" alt="Colección Arte Digital" class="img-fluid rounded">
+              <div class="collection-info">
+                <h3>Colección Arte Digital</h3>
+                <p>Diseños contemporáneos basados en nuestra exposición de nuevos medios.</p>
+                <a href="#" class="btn btn-outline-primary">Ver Colección</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="collection-card">
+              <img src="./assets/compressed/sculpture.jpg" alt="Colección Arquitectura" class="img-fluid rounded">
+              <div class="collection-info">
+                <h3>Colección Arquitectura</h3>
+                <p>Productos que celebran la belleza de nuestro edificio histórico y otros monumentos.</p>
+                <a href="#" class="btn btn-outline-primary">Ver Colección</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>¿Buscas un regalo especial?</h2>
+            <p class="lead">Ofrecemos tarjetas regalo para que tus seres queridos puedan elegir sus productos favoritos.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Comprar Tarjeta Regalo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Composición Digital</h3>
+          <p>Un espacio dedicado al arte y la cultura en todas sus formas.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Nosotros</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="merchandising.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Boletín Informativo</h3>
+          <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Tu email" required>
+              <button class="btn btn-primary" type="submit">Suscribir</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Composición Digital. Todos los derechos reservados. | Desarrollado por: Julieta Viano - Comisión DGT5AV - Turno tarde - Tercer año</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

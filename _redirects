@@ -1,0 +1,8 @@
+# Netlify redirects file
+/quienes-somos.html    /quienes-somos.html    200
+/colecciones.html      /colecciones.html       200
+/merchandising.html    /merchandising.html     200
+/contacto.html         /contacto.html          200
+
+# SPA fallback
+/*    /index.html   200
